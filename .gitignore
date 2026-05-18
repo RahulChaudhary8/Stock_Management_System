@@ -1,105 +1,131 @@
-# ===== OS/System files =====
+# ===== OS / System Files =====
 # Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
-# ===== Python / Django =====
-__pycache__/
-*.py[cod]
-*$py.class
+# Linux
+.directory
 
-# Virtual environments
-venv/
-ENV/
-env/
-.venv/
+# ===== BACKEND (Django / Python) =====
+
+# Virtual Environment
 Backend/venv/
+Backend/ENV/
+Backend/env/
+Backend/.venv/
 
-# Distribution / packaging
-build/
-dist/
-eggs/
-*.egg-info/
-*.egg
+# Python cache
+Backend/__pycache__/
+Backend/*.py[cod]
+Backend/*$py.class
+Backend/*.so
+Backend/.Python
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# Distribution / Packaging
+Backend/build/
+Backend/develop-eggs/
+Backend/dist/
+Backend/downloads/
+Backend/eggs/
+Backend/*.egg-info/
+Backend/*.egg
+Backend/MANIFEST
 
 # Django
-*.sqlite3
-db.sqlite3
-media/
-staticfiles/
-local_settings.py
-settings_local.py
+Backend/db.sqlite3
+Backend/db.sqlite3-journal
+Backend/media/
+Backend/staticfiles/
+Backend/static/
+Backend/local_settings.py
 
-# Django migrations cache (don't ignore migrations themselves)
-__pycache__/
+# Django migrations (if temp)
+# Backend/*/migrations/__pycache__/
 
-# Python testing
-.pytest_cache/
-coverage.xml
-htmlcov/
-.coverage
+# Testing
+Backend/.pytest_cache/
+Backend/.coverage
+Backend/htmlcov/
+Backend/coverage.xml
+Backend/.tox/
 
-# Byte-compiled / optimized / DLL files
-*.pyc
-*.pyo
-*.pyd
+# Celery / Beat
+Backend/celerybeat-schedule
+Backend/dump.rdb
 
-# ===== Node / Frontend =====
-node_modules/
-/.pnp
-.pnp.js
+# IDE / Editor
+Backend/.vscode/
+Backend/.idea/
+Backend/*.sublime-project
+Backend/*.sublime-workspace
+Backend/*.swp
+Backend/*.swo
+Backend/*~
 
-# Vite / build outputs
-dist/
-build/
-.vite/
-.cache/
+# Environment variables
+Backend/.env
+Backend/.env.local
+Backend/.env.*.local
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# Logs
+Backend/*.log
+Backend/logs/
 
-# environment variables
-.env
-.env.*
-.env.local
+# ===== FRONTEND (React / Vite / Node) =====
 
-# local lock files (optional)
-# package-lock.json
-# yarn.lock
+# Dependencies
+Frontend/node_modules/
+Frontend/.pnp
+Frontend/.pnp.js
 
-# ===== IDEs / editors =====
+# Production / Build
+Frontend/dist/
+Frontend/build/
+Frontend/.vite/
+Frontend/.cache/
+
+# Misc
+Frontend/.DS_Store
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/pnpm-debug.log*
+Frontend/lerna-debug.log*
+
+# Environment variables
+Frontend/.env
+Frontend/.env.local
+Frontend/.env.*.local
+Frontend/.env.production.local
+
+# IDE / Editor
+Frontend/.vscode/
+Frontend/.idea/
+Frontend/*.sublime-project
+Frontend/*.sublime-workspace
+Frontend/*.swp
+Frontend/*.swo
+Frontend/*~
+
+# Optional npm / yarn cache
+# Frontend/package-lock.json
+# Frontend/yarn.lock
+
+# Temporary files
+Frontend/.tmp
+Frontend/*.temp
+
+# ===== Project-level Misc =====
+.history/
+*.bak
+*.tmp
+*~
+.DS_Store
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-
-# JetBrains
-.idea/
-*.iml
-
-# ===== OS backup / temp files =====
-*.log
-*.tmp
-*.temp
-~$*
-
-# ===== Misc =====
-.coverage
-coverage/
-reports/
-
-# GitHub Copilot / local workspace
-.history/
